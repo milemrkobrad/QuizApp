@@ -25,6 +25,7 @@ public class question extends AppCompatActivity {
         setQuestion1();
     }
 
+    //display image, question and possible answers
     private void displayQuestionAnswer(int image, String question, String answerA, String answerB, String answerC) {
         ImageView imgView = (ImageView) findViewById(R. id.question_image);
         imgView.setImageResource(image);
@@ -42,6 +43,7 @@ public class question extends AppCompatActivity {
         answerCBtn.setText(answerC);
     }
 
+    //image, question and answers definition
     private void setQuestion1() {
         displayQuestionAnswer(R.drawable.q1, getResources().getString(R.string.question1), getResources().getString(R.string.answer1a), getResources().getString(R.string.answer1b), getResources().getString(R.string.answer1c));
     }
@@ -62,6 +64,7 @@ public class question extends AppCompatActivity {
         displayQuestionAnswer(R.drawable.q5, getResources().getString(R.string.question5), getResources().getString(R.string.answer5a), getResources().getString(R.string.answer5b), getResources().getString(R.string.answer5c));
     }
 
+    //on button click event- when user answering question check if answer is correct
     public void answerA_btn_click(View v) {
         int qNo = 1;
         switch (questionNo) {
@@ -175,6 +178,7 @@ public class question extends AppCompatActivity {
         questionNo = qNo;
     }
 
+    //go to score activity, after answering on last question
     private void callScoreActivity(){
         Intent myIntent = new Intent(question.this, score.class);
         myIntent.putExtra("SCORE", score);

@@ -1,46 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_question"
-    android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.quizapp.question"
+    android:fillViewport="false"
     android:orientation="vertical"
-    android:weightSum="1">
+  >
 
-    
-    <ImageView
-        android:id="@+id/question_image"
+    <LinearLayout
+        android:id="@+id/activity_question"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/q1"
-        android:scaleType="centerCrop"/>
-    <TextView
-        android:id="@+id/question_textview"
-        android:layout_width="match_parent"
-        android:layout_height="92dp"
-        android:text="@string/question1"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:layout_weight="0.75" />
-    <Button
-        android:id="@+id/answerA_btn"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="@string/answer1a"
-        android:onClick="answerA_btn_click"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
 
-    <Button
-        android:id="@+id/answerB_btn"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="@string/answer1b"
-        android:onClick="answerB_btn_click"/>
 
-    <Button
-        android:id="@+id/answerC_btn"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="@string/answer1c"
-        android:onClick="answerC_btn_click"/>
-</LinearLayout>
+        <ImageView
+            android:id="@+id/question_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/q1" />
+
+        <TextView
+            android:id="@+id/question_textview"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_weight="0.75"
+            android:gravity="center"
+            android:text="@string/question1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/answerA_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="answerA_btn_click"
+            android:text="@string/answer1a" />
+
+        <Button
+            android:id="@+id/answerB_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="answerB_btn_click"
+            android:text="@string/answer1b" />
+
+        <Button
+            android:id="@+id/answerC_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="answerC_btn_click"
+            android:text="@string/answer1c" />
+    </LinearLayout>
+</ScrollView>
