@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="button_start_text">Start quiz about Nikola Tesla!</string>
+
+    <string name="question1">In which country Tesla was born?</string>
+    <string name="answer1a">Croatia</string>
+    <string name="answer1b">USA</string>
+    <string name="answer1c">Italy</string>
+
+    <string name="question2">Who was Nikola Tesla?</string>
+    <string name="answer2a">A famous chef.</string>
+    <string name="answer2b">A famous architect.</string>
+    <string name="answer2c">An inventor.</string>
+
+    <string name="question3">Which of these inventions was NOT patented by Tesla?</string>
+    <string name="answer3a">Alternating Current</string>
+    <string name="answer3b">Electrical Power Transmission</string>
+    <string name="answer3c">Parachute</string>
+
+    <string name="question4">What does the unit "Tesla", named after Nikola Tesla stand for?</string>
+    <string name="answer4a">The unit of gravity</string>
+    <string name="answer4b">The unit od electric resistance.</string>
+    <string name="answer4c">Strength of a magnetic field.</string>
+
+    <string name="question5">What is the name of the founder and CEO of Tesla Inc.? A company named after Nikola Tesla.</string>
+    <string name="answer5a">Steve Jobs</string>
+    <string name="answer5b">Elon Musk</string>
+    <string name="answer5c">Larry Elison</string>
+</resources>
